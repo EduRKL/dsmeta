@@ -1,0 +1,100 @@
+.dem-card {
+    background-color: #99582A;
+    border-radius: 10px;
+    padding: 30px 10px;
+
+}
+
+.dem-titulo-vendas {
+    color: antiquewhite;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dem-formulario {
+    height: 46px;
+    background-color: rgb(236, 177, 143);
+    border: 1px solid coral;
+    border-radius: 5px;
+    width: 100%;
+    color: #432818;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.dem-formulario-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dem-tabela-vendas {
+    width: 100%;
+    border-spacing: 0ch;
+    border-collapse: collapse;
+}
+
+.dem-tabela-vendas thead {
+    height: 55px;
+    font-size: 16px;
+    color: antiquewhite;
+    font-weight: 700;
+}
+
+.dem-tabela-vendas tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFE6A7;
+    text-align: center;
+}
+
+.dem-tabela-vendas tbody th {
+    height: 74px;
+    border-top: 1px solid #432818;
+}
+
+.dem-tabela-vendas tbody tr:hover>th {
+    background-color: #f1e385;
+    color: #432818;
+}
+
+.dem-tabela-vendas tbody tr:nth-child(odd) {
+    background-color: rgb(199, 126, 84);
+}
+
+.dem-botao-vermelho-container {
+    display: flex;
+    justify-content: center;
+}
+
+.show576 {
+    display: none;
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576 {
+        display: table-cell;
+    }
+
+    .dem-card {
+        padding: 35px;
+    }
+
+    .dem-tabela-vendas tbody th {
+        height: 55px;
+    }
+
+    .dem-tabela-vendas tbody {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell;
+    }
+}
